@@ -1,11 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B.Tech IT Time Table</title>
+
+<style>
+body{
+    font-family: "Times New Roman", serif;
+    margin:20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:5px;
+}
+
+.info{
+    display:flex;
+    justify-content:space-between;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    text-align:center;
+}
+
+table, th, td{
+    border:1px solid black;
+}
+
+th, td{
+    padding:8px;
+}
+
+.small{
+    font-size:14px;
+}
+
+.break{
+    writing-mode:vertical-rl;
+    text-orientation:upright;
+    font-weight:bold;
+    font-size:18px;
+    letter-spacing:3px;
+}
+</style>
 </head>
+
 <body>
-    
+
+<h2>TIME TABLE</h2>
+
+<div class="info">
+    <span>Program: <b>B.Tech in IT</b></span>
+    <span>Semester: <b>V</b></span>
+    <span>Section: <b>A</b></span>
+    <span>Room No: <b>16109</b></span>
+    <span>w.e.f: <b>27-07-2026</b></span>
+</div>
+
+<table>
+
+<tr>
+    <th rowspan="2">DAY</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th></th>
+    <th>4</th>
+    <th>5</th>
+    <th></th>
+    <th>6</th>
+    <th>7</th>
+</tr>
+
+<tr class="small">
+    <th>09:00-10:00</th>
+    <th>10:00-11:00</th>
+    <th>11:00-12:00</th>
+    <th>12:00-01:00</th>
+    <th>01:00-01:50</th>
+    <th>01:50-02:40</th>
+    <th>02:40-02:50</th>
+    <th>02:50-03:40</th>
+    <th>03:40-04:30</th>
+</tr>
+
+<tr>
+    <th>MONDAY</th>
+    <td colspan="2">CN Lab</td>
+    <td>AJ</td>
+
+    <td rowspan="6" class="break">
+        LUNCH
+    </td>
+
+    <td colspan="2">SP</td>
+
+    <td rowspan="6" class="break">
+        BREAK
+    </td>
+
+    <td>AOR</td>
+    <td>DWDM</td>
+</tr>
+
+<tr>
+    <th>TUESDAY</th>
+    <td colspan="2">FSD1 Lab</td>
+    <td>AT&CD</td>
+    <td colspan="2">SP</td>
+    <td>DWDM</td>
+    <td>CN</td>
+</tr>
+
+<tr>
+    <th>WEDNESDAY</th>
+    <td colspan="3">Skilling</td>
+    <td>AOR</td>
+    <td>AT&CD</td>
+    <td colspan="2">SP</td>
+</tr>
+
+<tr>
+    <th>THURSDAY</th>
+    <td colspan="2">UI Flutter Lab</td>
+    <td>AT&CD</td>
+    <td>CN</td>
+    <td>AJ</td>
+    <td colspan="2">APT</td>
+</tr>
+
+<tr>
+    <th>FRIDAY</th>
+    <td colspan="2">AJ Lab</td>
+    <td>AJ</td>
+    <td>FSD1</td>
+    <td>CN</td>
+    <td>DWDM</td>
+    <td>AOR</td>
+</tr>
+
+<tr>
+    <th>SATURDAY</th>
+    <td colspan="2">SPA</td>
+    <td>CN</td>
+    <td>AT&CD</td>
+    <td>AOR</td>
+    <td>AJ</td>
+    <td>DWDM</td>
+</tr>
+
+</table>
+
 </body>
 </html>
