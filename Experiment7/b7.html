@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Object</title>
+</head>
+
+<body>
+
+    <h1>Window Object Example</h1>
+
+    <button onclick="showDetails()">Show Details</button>
+    <button onclick="openPage()">Open New Window</button>
+
+    <p id="result"></p>
+
+    <script>
+        function showDetails() {
+
+            
+            let width = window.innerWidth;
+            let height = window.innerHeight;
+
+            document.getElementById("result").innerHTML =
+                "Window Width: " + width + " pixels<br>" +
+                "Window Height: " + height + " pixels";
+        }
+
+        function openPage() {
+
+            
+            window.open("https://www.google.com", "_blank");
+        }
+    </script>
+
+</body>
+</html>

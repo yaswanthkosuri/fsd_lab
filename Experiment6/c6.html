@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Input Methods</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Input Methods</h1>
+
+    <button onclick="getInput()">Enter Your Name</button>
+
+    <p id="result"></p>
+
+    <script>
+        function getInput() {
+
+           
+            let name = prompt("Enter your name:");
+
+            
+            document.getElementById("result").innerHTML =
+                "Hello " + name;
+        }
+    </script>
+
+</body>
+</html>

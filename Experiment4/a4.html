@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Forms</title>
+
+    <style>
+
+        p {
+            color: blue;
+        }
+
+        #heading {
+            color: red;
+        }
+
+        .special {
+            background-color: yellow;
+        }
+
+        h3, h4 {
+            color: green;
+        }
+
+        * {
+            font-family: Arial;
+        }
+
+
+        div p {
+            color: purple;
+        }
+
+        div > span {
+            background-color: lightblue;
+        }
+
+        h5 + p {
+            color: brown;
+        }
+
+        h6 ~ p {
+            color: orange;
+        }
+
+
+
+        a:hover {
+            color: red;
+        }
+
+        input:focus {
+            background-color: lightyellow;
+        }
+
+
+        .para::first-letter {
+            color: red;
+            font-size: 30px;
+        }
+
+        .para::first-line {
+            font-weight: bold;
+        }
+
+
+
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+
+        input[type="password"] {
+            border: 2px solid green;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1 id="heading">CSS Selector Forms</h1>
+
+
+
+    <h2>1. Simple Selectors</h2>
+
+    <p>This is an element selector.</p>
+
+    <p class="special">This is a class selector.</p>
+
+    <h3>Group Selector - H3</h3>
+    <h4>Group Selector - H4</h4>
+
+
+    <h2>2. Combinator Selectors</h2>
+
+    <!-- Descendant Selector -->
+    <div>
+        <p>This is a descendant selector.</p>
+    </div>
+
+    <div>
+        <span>This is a child selector.</span>
+    </div>
+
+    <h5>Heading 5</h5>
+    <p>This is an adjacent sibling.</p>
+
+    <h6>Heading 6</h6>
+    <p>General sibling 1</p>
+    <p>General sibling 2</p>
+
+
+    <h2>3. Pseudo-Class Selector</h2>
+
+    <a href="https://www.google.com">Move mouse over this link</a>
+
+    <br><br>
+
+    <input type="text" placeholder="Click here">
+
+
+    <h2>4. Pseudo-Element Selector</h2>
+
+    <p class="para">
+        This paragraph demonstrates pseudo-element selectors.
+        The first letter and first line are styled differently.
+    </p>
+
+
+    <h2>5. Attribute Selector</h2>
+
+    <input type="text" placeholder="Username">
+
+    <br><br>
+
+    <input type="password" placeholder="Password">
+
+</body>
+</html>

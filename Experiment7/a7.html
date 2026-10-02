@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Object</title>
+</head>
+
+<body>
+
+    <h1 id="heading">Document Object Example</h1>
+
+    <p id="para">This is a paragraph.</p>
+
+    <button onclick="showDetails()">Click Me</button>
+
+    <script>
+        function showDetails() {
+
+            
+            document.title = "Changed Title";
+
+            document.getElementById("heading").innerHTML =
+                "Heading Changed";
+
+            document.getElementById("para").innerHTML =
+                "Paragraph changed using JavaScript.";
+
+            alert("Document Title: " + document.title);
+        }
+    </script>
+
+</body>
+</html>

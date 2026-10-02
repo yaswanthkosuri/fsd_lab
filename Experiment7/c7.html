@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Object</title>
+</head>
+
+<body>
+
+    <h2>Array Object Example</h2>
+
+    <p id="result"></p>
+
+    <script>
+
+        
+        let fruits = ["Apple", "Banana", "Mango"];
+
+       
+        let size = fruits.length;
+
+        
+        fruits.push("Orange");       // Add at end
+        fruits.pop();                // Remove from end
+        fruits.unshift("Grapes");    // Add at beginning
+        fruits.shift();              // Remove from beginning
+
+        document.getElementById("result").innerHTML =
+            "Array: " + fruits + "<br>" +
+            "Length: " + fruits.length + "<br>" +
+            "First Element: " + fruits[0];
+
+    </script>
+
+</body>
+</html>
